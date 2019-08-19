@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/colorAccent">
+
+        <View
+            android:layout_toRightOf="@+id/gambar1"
+            android:background="#e0e0e0e0"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_160sdp"/>
+
+
+        <ImageView
+            android:id="@+id/gambar1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/produk1" />
+
+        <TextView
+            android:id="@+id/txt_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gambar1"
+            android:text="Sepatu Kniker"
+            android:textSize="40px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_info"
+            android:text="Rp. 150.000"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/txt_harga"
+            android:text="0 terjual" />
+    </RelativeLayout>
+
+</RelativeLayout>

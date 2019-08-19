@@ -1,0 +1,1044 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+
+
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            style="@style/TabLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            android:background="?attr/colorPrimary"/>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <!--<RelativeLayout-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/beli"-->
+    <!--android:background="@color/colorAccent"-->
+    <!--android:layout_toLeftOf="@+id/tengah"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:text="Beli"-->
+    <!--android:textColor="@color/colorPrimary"-->
+    <!--android:textSize="20dp" />-->
+    <!--<TextView-->
+
+    <!--android:layout_marginRight="80dp"-->
+    <!--android:layout_marginLeft="80dp"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:id="@+id/tengah"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/jual"-->
+    <!--android:background="@color/colorAccent"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_toRightOf="@+id/tengah"-->
+    <!--android:gravity="center"-->
+    <!--android:text="Jual"-->
+    <!--android:textSize="20dp" />-->
+    <!--</RelativeLayout>-->
+
+
+    <!--<ScrollView-->
+    <!--android:layout_marginBottom="50dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginTop="30dp">-->
+
+    <!--<LinearLayout-->
+    <!--android:gravity="center"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/_150sdp"-->
+    <!--android:layout_marginBottom="50dp"-->
+    <!--android:background="@drawable/ic_bg_account" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/account"-->
+    <!--android:layout_width="60dp"-->
+    <!--android:layout_height="60dp"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_marginTop="130dp"-->
+    <!--android:background="@drawable/ic_login" />-->
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/setting"-->
+    <!--android:layout_width="25dp"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:background="@drawable/ic_setting" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="25dp"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_toRightOf="@+id/setting"-->
+    <!--android:background="@drawable/ic_lori" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/nama_account"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginTop="130dp"-->
+    <!--android:layout_toRightOf="@+id/account"-->
+    <!--android:text="Naufal Islam"-->
+    <!--android:textColor="@color/colorNavigationText" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginTop="160dp"-->
+    <!--android:layout_toRightOf="@+id/account"-->
+    <!--android:text="Verified Account"-->
+    <!--android:textColor="@color/colorPrimary" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="300dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center">-->
+
+
+    <!--<ImageView-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:background="@drawable/ic_saldo" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:text="Rp 0"-->
+    <!--android:textColor="@color/colorBlack"-->
+    <!--android:textSize="30dp" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="300dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginTop="30dp">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/transaksi"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Transaksi"-->
+    <!--android:textColor="@color/colorBlack"-->
+    <!--android:textSize="20dp"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/transaksi_pembayaran"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/transaksi"-->
+    <!--android:text="Transaksi Pembayaran"-->
+    <!--android:textColor="@color/colorBlack"-->
+    <!--android:textSize="10dp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/transaksi_pembayaran"-->
+    <!--android:text="Semua transaksi yang belum di bayar"-->
+    <!--android:textSize="10dp" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:background="@drawable/ic_lanjutan" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="300dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginTop="30dp">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/transaksi_belanja"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:text="Transaksi Belanja"-->
+    <!--android:textColor="@color/colorBlack"-->
+    <!--android:textSize="12dp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:text="Lihat Riwayat"-->
+    <!--android:textColor="@color/colorPrimary"-->
+    <!--android:textSize="12dp" />-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/transaksi_belanja"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/konfirmasi"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="50sp"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:background="@drawable/ic_konfirmasi" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/konfimasi_text"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/konfirmasi"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:text="menunggu"-->
+    <!--android:textColor="@color/colorBlack"-->
+    <!--android:textSize="10dp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/konfimasi_text"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:text="Konfirmasi"-->
+    <!--android:textColor="@color/colorBlack"-->
+    <!--android:textSize="10dp" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/pesanan"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="50sp"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:background="@drawable/ic_pesanan" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/pesanan_text"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/pesanan"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:text="Pesanan"-->
+    <!--android:textColor="@color/colorBlack"-->
+    <!--android:textSize="10dp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/pesanan_text"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:text="Diproses"-->
+    <!--android:textColor="@color/colorBlack"-->
+    <!--android:textSize="10dp" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/kirim"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="50sp"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:background="@drawable/ic_pengiriman" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/kirim_text"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/kirim"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:text="Sedang"-->
+    <!--android:textColor="@color/colorBlack"-->
+    <!--android:textSize="10dp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/kirim_text"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:text="Dikirim"-->
+    <!--android:textColor="@color/colorBlack"-->
+    <!--android:textSize="10dp" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/tujuan"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="50sp"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:background="@drawable/ic_lokasi" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tujuan_text"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/tujuan"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:text="menunggu"-->
+    <!--android:textColor="@color/colorBlack"-->
+    <!--android:textSize="10dp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/tujuan_text"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:text="Konfirmasi"-->
+    <!--android:textColor="@color/colorBlack"-->
+    <!--android:textSize="10dp" />-->
+    <!--</RelativeLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="300dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginTop="30dp">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/komplain_barang"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Riwayat Komplain Barang"-->
+    <!--android:textColor="@color/colorBlack" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/komplain_barang"-->
+    <!--android:text="Lihat Status Komplain" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:background="@drawable/ic_lanjutan" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="300dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginTop="30dp">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/komplain_admin"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Komplain ke Admin"-->
+    <!--android:textColor="@color/colorBlack" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/komplain_admin"-->
+    <!--android:text="Ajukan komplain ke admin" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:background="@drawable/ic_lanjutan" />-->
+
+    <!--</RelativeLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+
+    <!--</ScrollView>-->
+
+</LinearLayout>
+
+
+
+
+<!--keh ning kene-->
+
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:background="@color/colorAccent">-->
+
+                <!--<TextView-->
+
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+
+                <!--android:text="Kategori Barang"-->
+                <!--android:textColor="#FF8C00"-->
+                <!--android:textSize="20dp" />-->
+
+                <!--<TextView-->
+
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="85dp"-->
+
+                <!--android:text="Lihat Semua"-->
+                <!--android:textColor="#FF8C00"-->
+                <!--android:textSize="15dp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="vertical">-->
+
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:background="@color/colorAccent">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:text="Aksesoris" />-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/produk1"-->
+                <!--android:layout_width="75dp"-->
+                <!--android:layout_height="75dp"-->
+                <!--android:layout_margin="15dp"-->
+                <!--android:background="@drawable/produk1" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:background="@color/colorAccent">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:text="Aksesoris" />-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/produk2"-->
+                <!--android:layout_width="75dp"-->
+                <!--android:layout_height="75dp"-->
+                <!--android:layout_margin="15dp"-->
+                <!--android:background="@drawable/produk2" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:background="@color/colorAccent">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:text="Aksesoris" />-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/produk3"-->
+                <!--android:layout_width="75dp"-->
+                <!--android:layout_height="75dp"-->
+                <!--android:layout_margin="15dp"-->
+                <!--android:background="@drawable/produk3" />-->
+                <!--</RelativeLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:background="@color/colorAccent">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:text="Aksesoris" />-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/produk4"-->
+                <!--android:layout_width="75dp"-->
+                <!--android:layout_height="75dp"-->
+                <!--android:layout_margin="15dp"-->
+                <!--android:background="@drawable/produk4" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:background="@color/colorAccent">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:text="Aksesoris" />-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/produk5"-->
+                <!--android:layout_width="75dp"-->
+                <!--android:layout_height="75dp"-->
+                <!--android:layout_margin="15dp"-->
+                <!--android:background="@drawable/produk5" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:background="@color/colorAccent">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:text="Aksesoris" />-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/produk6"-->
+                <!--android:layout_width="75dp"-->
+                <!--android:layout_height="75dp"-->
+                <!--android:layout_margin="15dp"-->
+                <!--android:background="@drawable/produk6" />-->
+                <!--</RelativeLayout>-->
+
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:background="@color/colorAccent">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:text="Aksesoris" />-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/produk7"-->
+                <!--android:layout_width="75dp"-->
+                <!--android:layout_height="75dp"-->
+                <!--android:layout_margin="15dp"-->
+                <!--android:background="@drawable/produk7" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:background="@color/colorAccent">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:text="Aksesoris" />-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/produk8"-->
+                <!--android:layout_width="75dp"-->
+                <!--android:layout_height="75dp"-->
+                <!--android:layout_margin="15dp"-->
+                <!--android:background="@drawable/produk8" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:background="@color/colorAccent">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:text="Aksesoris" />-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/produk9"-->
+                <!--android:layout_width="75dp"-->
+                <!--android:layout_height="75dp"-->
+                <!--android:layout_margin="15dp"-->
+                <!--android:background="@drawable/produk9" />-->
+                <!--</RelativeLayout>-->
+
+
+                <!--</LinearLayout>-->
+
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+
+                <!--android:text="Golden Shop Produk"-->
+                <!--android:textSize="20dp"-->
+                <!--android:textStyle="bold" />-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:background="@color/colorAccent">-->
+
+
+                <!--<ImageView-->
+                <!--android:id="@+id/gambar1"-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="120dp"-->
+                <!--android:layout_margin="15dp"-->
+                <!--android:background="@drawable/produk1" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/txt_nama"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/gambar1"-->
+                <!--android:text="Sepatu Kniker"-->
+                <!--android:textSize="40px"-->
+                <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/txt_harga"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/txt_nama"-->
+                <!--android:text="Rp. 150.000"-->
+                <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+
+                <!--android:layout_below="@+id/txt_harga"-->
+                <!--android:text="0 terjual" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:background="@color/colorAccent">-->
+
+
+                <!--<ImageView-->
+                <!--android:id="@+id/gambar2"-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="120dp"-->
+                <!--android:layout_margin="15dp"-->
+                <!--android:background="@drawable/produk2" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/txt_nama2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/gambar2"-->
+                <!--android:text="Sepatu Kniker"-->
+                <!--android:textSize="40px"-->
+                <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/txt_harga2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/txt_nama2"-->
+                <!--android:text="Rp. 150.000"-->
+                <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+
+                <!--android:layout_below="@+id/txt_harga2"-->
+                <!--android:text="0 terjual" />-->
+                <!--</RelativeLayout>-->
+
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:background="@color/colorAccent">-->
+
+
+                <!--<ImageView-->
+                <!--android:id="@+id/gambar3"-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="120dp"-->
+                <!--android:layout_margin="15dp"-->
+                <!--android:background="@drawable/produk3" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/txt_nama3"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/gambar3"-->
+                <!--android:text="Sepatu Kniker"-->
+                <!--android:textSize="40px"-->
+                <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/txt_harga3"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/txt_nama3"-->
+                <!--android:text="Rp. 150.000"-->
+                <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+
+                <!--android:layout_below="@+id/txt_harga3"-->
+                <!--android:text="0 terjual" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:background="@color/colorAccent">-->
+
+
+                <!--<ImageView-->
+                <!--android:id="@+id/gambar4"-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="120dp"-->
+                <!--android:layout_margin="15dp"-->
+                <!--android:background="@drawable/produk4" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/txt_nama4"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/gambar4"-->
+                <!--android:text="Sepatu Kniker"-->
+                <!--android:textSize="40px"-->
+                <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/txt_harga4"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/txt_nama4"-->
+                <!--android:text="Rp. 150.000"-->
+                <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+
+                <!--android:layout_below="@+id/txt_harga4"-->
+                <!--android:text="0 terjual" />-->
+                <!--</RelativeLayout>-->
+
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:background="@color/colorAccent">-->
+
+
+                <!--<ImageView-->
+                <!--android:id="@+id/gambar5"-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="120dp"-->
+                <!--android:layout_margin="15dp"-->
+                <!--android:background="@drawable/produk5" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/txt_nama5"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/gambar5"-->
+                <!--android:text="Sepatu Kniker"-->
+                <!--android:textSize="40px"-->
+                <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/txt_harga5"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/txt_nama5"-->
+                <!--android:text="Rp. 150.000"-->
+                <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+
+                <!--android:layout_below="@+id/txt_harga5"-->
+                <!--android:text="0 terjual" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:background="@color/colorAccent">-->
+
+
+                <!--<ImageView-->
+                <!--android:id="@+id/gambar6"-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="120dp"-->
+                <!--android:layout_margin="15dp"-->
+                <!--android:background="@drawable/produk6" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/txt_nama6"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/gambar6"-->
+                <!--android:text="Sepatu Kniker"-->
+                <!--android:textSize="40px"-->
+                <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/txt_harga6"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/txt_nama6"-->
+                <!--android:text="Rp. 150.000"-->
+                <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+
+                <!--android:layout_below="@+id/txt_harga6"-->
+                <!--android:text="0 terjual" />-->
+                <!--</RelativeLayout>-->
+
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:background="@color/colorAccent">-->
+
+
+                <!--<ImageView-->
+                <!--android:id="@+id/gambar7"-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="120dp"-->
+                <!--android:layout_margin="15dp"-->
+                <!--android:background="@drawable/produk7" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/txt_nama7"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/gambar7"-->
+                <!--android:text="Sepatu Kniker"-->
+                <!--android:textSize="40px"-->
+                <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/txt_harga7"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/txt_nama7"-->
+                <!--android:text="Rp. 150.000"-->
+                <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+
+                <!--android:layout_below="@+id/txt_harga7"-->
+                <!--android:text="0 terjual" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:background="@color/colorAccent">-->
+
+
+                <!--<ImageView-->
+                <!--android:id="@+id/gambar8"-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="120dp"-->
+                <!--android:layout_margin="15dp"-->
+                <!--android:background="@drawable/produk8" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/txt_nama8"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/gambar8"-->
+                <!--android:text="Sepatu Kniker"-->
+                <!--android:textSize="40px"-->
+                <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/txt_harga8"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/txt_nama8"-->
+                <!--android:text="Rp. 150.000"-->
+                <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+
+                <!--android:layout_below="@+id/txt_harga8"-->
+                <!--android:text="0 terjual" />-->
+                <!--</RelativeLayout>-->
+
+
+                <!--</LinearLayout>-->
+
+
+                <!--</LinearLayout>-->

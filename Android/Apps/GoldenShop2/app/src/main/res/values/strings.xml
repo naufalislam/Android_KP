@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Golden Shop</string>
+
+    // TODO: 22/02/18
+    <string name="home">Home</string>
+    <string name="gs">GS</string>
+    <string name="cart">Cart</string>
+    <string name="account">Account</string>
+
+    //tab layout
+    <string name="beli">Beli</string>
+    <string name="jual">Jual</string>
+</resources>

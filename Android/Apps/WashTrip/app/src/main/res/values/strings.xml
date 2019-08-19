@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Wash Trip</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Promo</string>
+    <string name="title_history">History</string>
+    <string name="title_notifications">Account</string>
+</resources>

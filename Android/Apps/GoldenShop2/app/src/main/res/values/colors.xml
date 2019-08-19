@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff6600</color>
+    <color name="colorPrimaryDark">#ff6600</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="colorBlack">#000</color>
+    <!--#FF8C00-->
+
+    // TODO: 22/02/18
+    <color name="colorNavigationIcon">#80808080</color>
+    <color name="colorNavigationText">#ffffff</color>
+
+
+    <color name="pink">#FCE4EC</color>
+    <color name="color_white_semitransparent">#99FFFFFF</color>
+</resources>

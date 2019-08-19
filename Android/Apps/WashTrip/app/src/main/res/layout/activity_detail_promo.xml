@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailPromo">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                        <com.github.florent37.shapeofview.shapes.RoundRectView
+                            android:id="@+id/poster"
+                            android:layout_marginBottom="@dimen/_16sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_250sdp"
+                            android:elevation="4dp"
+                            app:shape_roundRect_bottomLeftRadius="@dimen/_50sdp"
+                            app:shape_roundRect_bottomRightRadius="@dimen/_50sdp">
+
+                            <ImageView
+
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_1"
+                                android:layout_width="@dimen/_350sdp"
+                                android:layout_height="match_parent" />
+
+                        </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+                        <TextView
+                            android:id="@+id/tulisan1"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_16sdp"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:layout_marginBottom="@dimen/_16sdp"
+                            android:text="Potongan Harga 25% Pengguna\nPertama"
+                            android:layout_marginTop="@dimen/_16sdp"
+                            android:layout_below="@+id/poster"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/text"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:text=" Duis aute irure dolor in reprehenderit\nin voluptate velit esse cillum dolore eu\nfugiat nulla pariatur."
+                            android:layout_below="@+id/tulisan1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:onClick="lihatSemua"
+                            android:id="@+id/lihat_semua"
+                            android:textStyle="bold"
+                            android:layout_marginTop="@dimen/_16sdp"
+                            android:layout_marginBottom="@dimen/_16sdp"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:layout_below="@+id/text"
+                            android:textColor="@color/colorPrimary"
+                            android:text="Lihat Semua"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <View
+                            android:id="@+id/view"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_marginRight="@dimen/_8sdp"
+                            android:layout_below="@+id/lihat_semua"
+                            android:background="#E0BDBDBD"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"></View>
+
+                        <TextView
+                            android:id="@+id/kategori_layanan"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_16sdp"
+                            android:layout_below="@+id/view"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:text="Kategori Layanan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardview"
+                            android:elevation="@dimen/_3sdp"
+                            app:cardCornerRadius="@dimen/_6sdp"
+                            android:layout_below="@+id/kategori_layanan"
+                            android:layout_marginRight="@dimen/_8sdp"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_16sdp"
+                            android:layout_marginBottom="@dimen/_16sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                    <ImageView
+                                        android:id="@+id/bg1"
+                                        android:background="@drawable/bg_2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_120sdp" />
+
+                                    <TextView
+                                        android:id="@+id/promo"
+                                        android:layout_marginLeft="@dimen/_6sdp"
+                                        android:textColor="#000000"
+                                        android:layout_marginTop="@dimen/_6sdp"
+                                        android:textStyle="bold"
+                                        android:layout_below="@+id/bg1"
+                                        android:text="Potongan Harga 25% Pengguna\nPertama"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:textSize="@dimen/_8sdp"
+                                        android:layout_marginLeft="@dimen/_6sdp"
+                                        android:layout_marginBottom="@dimen/_8sdp"
+                                        android:layout_below="@+id/promo"
+                                        android:text="Berlaku Hingga 31 Desember 2019"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/button1"
+                                    android:elevation="@dimen/_3sdp"
+                                    app:cardCornerRadius="@dimen/_6sdp"
+                                    app:cardBackgroundColor="@color/colorPrimary"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginTop="@dimen/_6sdp"
+                                    android:layout_marginRight="@dimen/_6sdp"
+                                    android:layout_below="@+id/bg1"
+                                    android:layout_width="@dimen/_75sdp"
+                                    android:layout_height="25dp">
+
+                                    <TextView
+                                        android:gravity="center"
+                                        android:textColor="@color/colorAccent"
+                                        android:textStyle="bold"
+                                        android:text="Gunakan"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent" />
+
+
+                                </androidx.cardview.widget.CardView>
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/order"
+                    android:onClick="order"
+                    android:elevation="@dimen/_3sdp"
+                    app:cardCornerRadius="@dimen/_6sdp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginBottom="@dimen/_30sdp"
+                    android:layout_below="@+id/cardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp">
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+                        android:text="Gunakan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

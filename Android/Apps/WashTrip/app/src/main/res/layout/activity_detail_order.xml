@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailOrder">
+
+    <androidx.cardview.widget.CardView
+        android:elevation="@dimen/_6sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:id="@+id/washtrip"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:background="@drawable/ic_washtrip_blue"
+            android:layout_width="@dimen/_75sdp"
+            android:layout_height="@dimen/_40sdp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/gambar"
+        android:background="@drawable/ic_motor_1"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_250sdp" />
+
+    <RelativeLayout
+        android:layout_below="@+id/gambar"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:id="@+id/rincian_order"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:text="Rincian Order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"
+            android:text="Jarak Tempuh"
+            android:layout_below="@+id/rincian_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/jarak_tempuh"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_13sdp"
+                    android:text="20 Km"
+                    android:layout_below="@+id/rincian_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"
+            android:text="Biaya Cuci"
+            android:layout_below="@+id/jarak_tempuh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/biaya_cuci"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_13sdp"
+                    android:text="Rp. 200.000"
+                    android:layout_below="@+id/jarak_tempuh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"
+            android:text="Potongan"
+            android:layout_below="@+id/biaya_cuci"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/potongan"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_13sdp"
+                    android:text="Rp. 20.000"
+                    android:layout_below="@+id/biaya_cuci"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_below="@+id/potongan"
+            android:background="#838383"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"></View>
+
+
+                <TextView
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_13sdp"
+                    android:text="Total"
+                    android:layout_below="@+id/view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/total"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:layout_marginBottom="@dimen/_6sdp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:textSize="@dimen/_13sdp"
+                            android:text="Rp. 220.000"
+                            android:layout_below="@+id/view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/text_alamat"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_13sdp"
+            android:text="Alamat Pencucian"
+            android:layout_below="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/ic_lokasi"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_below="@+id/text_alamat"
+            android:background="@drawable/ic_lokasi"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp" />
+
+        <TextView
+            android:id="@+id/alamat"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:text="Jalan Warigalit II, Kota Semarang"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_toRightOf="@+id/ic_lokasi"
+            android:layout_below="@+id/text_alamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/order"
+            android:onClick="pesan"
+            android:elevation="@dimen/_3sdp"
+            app:cardCornerRadius="@dimen/_6sdp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_below="@+id/alamat"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp">
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:text="Gunakan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
